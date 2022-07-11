@@ -1,0 +1,222 @@
+body{
+    margin: 0;
+    padding: 0;
+    z-index:1;
+}
+nav{
+    display:flex;
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height: 100px;
+    padding: 15px 30px;
+    box-sizing:border-box;
+    justify-content: space-between;
+    text-align: center;
+    background: rgba(56, 62, 78, 0.459);
+    border-bottom: 1px solid #fff;   
+    z-index:1;
+
+}
+
+nav .logo{
+    font-family:"Gill Sans MT";
+    padding: 10px;
+    height: 80px;
+    float: left;
+    font-size:60px;
+    text-transform:uppercase;
+    font-weight: bold;
+    z-index:1;
+}
+
+nav ol{
+    list-style:none;
+    float:right;
+    margin:0;
+    padding:0;
+    display: flex; 
+}
+nav ol li a{
+    line-height:80px;
+    color:#add8e6;
+    padding:20px;
+    border:10px;
+    text-decoration:none;
+    font-size:20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    z-index:1;
+}
+nav ol li a:hover{
+    background: rgba(139, 139, 141, 0.849);
+    border-radius: 6px;
+}
+nav .search_box{
+    display:flex;
+    margin:auto=0;
+    height:35px;
+    padding: 25px;
+    line-height:50px;
+    z-index:1;
+}
+
+nav .search_box input{
+    border:none;
+    outline:none;
+    background:rgb(245, 247, 248);
+    height:100%;
+    padding:0 20px;
+    font-size:20px;
+    width: 350px;
+    font-family:arial;
+    z-index:1;
+}
+nav .search_box span{
+    color:hsl(229, 78%, 7%);
+    font-size: 35px;
+    background:#fff;
+    height: 100%;
+    padding: 0;
+    position:relative;
+    cursor:pointer;
+    z-index:1;
+}
+nav .search_box span:hover{
+    color:white;
+}
+nav .search_box span::after{
+    height: 100%;
+    width:0;
+    content:'';
+    background: lightblue;
+    position: absolute;
+    top:0;
+    right:0;
+    z-index:-1;
+    transition: 0.3s;
+}
+nav .search_box span:hover::after{
+    width:100%;  
+}
+.section{
+    position:relative;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    background-position: center;
+    justify-content: center;
+    overflow: hidden;   
+}
+form{
+    box-sizing: border-box;
+    position:absolute;
+    background-color:#dde0e213;
+    z-index: 1;
+}
+input[type=text], input[type=password] {
+    width: 95%;
+    padding: 15px;
+    margin: 10px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+}
+input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+} 
+hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+}
+button {
+    background-color: rgb(17, 33, 255);
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+} 
+button:hover {
+    opacity:1;
+}
+.cancelbtn {
+    padding: 14px 20px;
+    background-color: rgb(245, 40, 40);
+}
+.cancelbtn, .signupbtn {
+    float: left;
+    width: 50%;
+}
+.container {
+    padding: 10px;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+  @media screen and (max-width: 300px) {
+    .cancelbtn, .signupbtn {
+      width: 100%;
+    }
+}    
+ .section2{
+    background-image: url(tech.jpg);
+    width:100%;
+    height:100vh;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+    justify-content: center;
+    align-items:center;
+}
+.phar1{
+    font-family:'Times New Roman';
+    font-size:40px;
+    width:100%;
+    position:absolute;
+    top:10%;
+    color: blanchedalmond;
+    padding: 10px;
+    z-index:1;
+}
+.phar2{
+    font-family:'Times New Roman';
+    font-size:20px;
+    width:100%;
+    position:absolute;
+    top:20%;
+    color: blanchedalmond;
+    padding: 10px;
+    z-index:1;
+}
+.phar3{
+    font-family:'Times New Roman';
+    font-size:40px;
+    width:100%;
+    position:absolute;
+    top:80%;
+    color: blanchedalmond;
+    padding: 10px;
+    z-index:1;
+}
+.img1{
+    float:left;
+    padding: 10px;
+    position:absolute;
+    top:30%;
+    z-index:1;
+}
+.img2{
+    float:right;
+    padding: 10px;
+    position:absolute;
+    top:30%;
+    right: 450px;;
+    z-index:1;
+}
